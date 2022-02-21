@@ -1,8 +1,8 @@
 const numbers = [0,1,2];
+let sum = 0;
 
 for (let item of numbers) {
-    let sum = 0;
-    sum += item;
+     sum += item;
 }
 
-console.log(sum)
+console.log("La suma de los elementos del array es :",sum);
