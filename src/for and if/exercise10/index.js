@@ -1,4 +1,6 @@
-let numbers = [2,1,4,5,6,3,7,8,1,4,6,8,1,5,7,8,3]
+/*let numbers = [2,1,4,5,6,3,7,8,1,4,6,8,1,5,7,8,3]*/
+
+let numbers=[35,6,1,8,96,85,91,33,59,14,61,45,75,42,88,69,41,15,54,67]
 
 // Put your code here
 
@@ -13,6 +15,15 @@ for(let item=0; item<numbers.length; item++ ) {
         }
         
     }
-}   
+}
+
+// Código sustitutorio.
+//----------------------
+// numbers.sort();
+
 console.log(numbers);
+
+
+
+
 
