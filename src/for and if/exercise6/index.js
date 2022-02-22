@@ -9,7 +9,8 @@ for (let item of mix) {
     if (typeof item === "string") {
         strings.push(item);
     } 
-    else if (typeof item === "number"){
+    
+    if (typeof item === "number"){
         numbers.push(item);    
     }
     
