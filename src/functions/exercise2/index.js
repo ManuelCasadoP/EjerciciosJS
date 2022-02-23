@@ -5,6 +5,7 @@ function plusone(number) {
     return number;
 }
 
-plusone(number);
+/* para que funcione solo hace falta añadir 'console.log' para imprimir el resultado de la función plusone */ 
+console.log('El valor de la variable "number" de dentro de la función es :',plusone(number));
 
-console.log(number)
+console.log('El valor de la variable "number" de fuera de la función es :',number);
