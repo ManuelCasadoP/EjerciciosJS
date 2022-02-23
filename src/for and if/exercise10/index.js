@@ -19,7 +19,7 @@ for(let item=0; item<numbers.length; item++ ) {
 
 // Código sustitutorio.
 //----------------------
-// numbers.sort();
+//numbers.sort(function(a, b){return a - b});
 
 console.log(numbers);
 
