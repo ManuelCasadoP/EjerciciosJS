@@ -10,7 +10,7 @@ for (let item of mix) {
         strings.push(item);
     } 
     
-    if (typeof item === "number"){
+    if (typeof item === "number" && !isNaN(item)){
         numbers.push(item);    
     }
     
