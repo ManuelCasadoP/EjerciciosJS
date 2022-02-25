@@ -3,8 +3,8 @@ const numbers = [11,9,13,12]
 // Put your code here
 
 function minorInRange(idx1,idx2,array){
+    let numMenor=null;
     for(i=idx1; i<=idx2; i++){
-        numMenor=null;
         if (array[idx1] < array[idx1+1]){
             numMenor=array[idx1];
         }
