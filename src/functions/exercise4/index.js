@@ -2,7 +2,7 @@ const numbers = [11,12,13,14];
 
 // Put your code here
 function swap(idx1,idx2,array){
-    temporal=null;
+    let temporal=null;
     temporal=array[idx1];
     array[idx1]=array[idx2];
     array[idx2]=temporal;
