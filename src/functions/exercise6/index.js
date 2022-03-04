@@ -37,3 +37,11 @@ function ordenarArray (array) {
 ordenarArray(numbers);
 
 console.log(numbers);
+
+ordenarArray(numbers1);
+
+console.log(numbers1);
+
+ordenarArray(numbers2);
+
+console.log(numbers2);
