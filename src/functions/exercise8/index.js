@@ -2,14 +2,30 @@ numbers = [4,2,9,6,1,0,3,6,5,2,9];
 
 function aGreatherThanB (a, b) {
     // Put your code here
+    if (a>b){
+        return true;
+    }
+    else{
+        return false;
+    }
 }
 
 function bGreatherThanA (a,b) {
     // Put your code here
+    if (b>a){
+        return true;
+    }
+    else{
+        return false;
+    }
 }
 
 function swap (idxA, idxB, array) {
     // Put your code here
+        let temporal=array[idxA]
+        array[idxA]=array[idxB];
+        array[idxB]=temporal;
+    
 }
 
 function sort (comparator, array) {
@@ -21,7 +37,7 @@ function sort (comparator, array) {
         }
     }
 }
-
+console.log("Array Original");
 console.log(numbers);
 sort(aGreatherThanB, numbers);
 console.log(numbers);
