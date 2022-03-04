@@ -1,4 +1,6 @@
-const numbers = [11,9,13,12]
+const numbers = [11,9,13,12];
+const numbers1 = [11,15,2,8,35,42,5,6,85,9,112,32,13,74,19];
+const numbers2 = [12,13,9,11];
 
 // Paste your functions here
 
@@ -9,18 +11,29 @@ function swap(idx1,idx2,array){
 }
 
 function minorInRange(idx1,idx2,array){
-    let numMenor=null;
+    let idxMenor=idx1;
     for(i=idx1; i<=idx2; i++){
-        if (array[idx1] < array[idx1+1]){
-            numMenor=idx1;
-        }
-        else {
-            numMenor=idx1+1;
+        if ( array[i] < array[idxMenor] ){
+            idxMenor=i;
         }
     }
-    return numMenor;
+    return idxMenor;
 }
 
 // Put your code here
+
+console.log(numbers);
+
+function ordenarArray (array) {
+    for(indice=0; indice < array.length-1; indice++){
+        let indiceMenor = minorInRange(indice, array.length-1, array);
+        if (indiceMenor > indice) {
+            swap(indice, indiceMenor, array);
+        }
+    }
+    
+}
+
+ordenarArray(numbers);
 
 console.log(numbers);
